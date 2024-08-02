@@ -1,0 +1,116 @@
+.slider{
+    height: 5px;
+    background: rgb(226, 222, 223);
+    border-radius: 5px;
+    position: relative;
+}
+.slider .progress{
+    height: 5px;
+    background: pink;
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+}
+.range-input{
+    position: relative;
+}
+.range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    appearance: none;
+}
+.input[type='range']::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    background: pink;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    /* pointer-events: auto; */
+}
+
+.range{
+    height: 80px;
+    /* width: 380px; */
+    /* background: blue; */
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+}
+.range .field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field input{
+    appearance: none;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
+/* .range .slidervalue{
+    position: relative;
+    width: 100%;
+} */
+/* .range .slidervalue span{
+    position:absolute;
+    height: 45px;
+    width: 45px;
+    background: green;
+    color: white;
+    font-weight: 400;
+    top: -40px;
+    transform:  translate(-50%);
+    line-height: 55px;
+    z-index: 2;
+} */
+
+/* .range .slidervalue span:after{
+    position:absolute;
+    content: '';
+    height: 45px;
+    width: 45px;
+    background: green;
+    color: white;
+    font-weight: 400;
+    top: 50%;
+    border: 3px solid #fff;
+    transform:  translate(-50%) rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+} */
+
+.range .field .value{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+.range .field .value .upper{
+   top: 30px;
+   color: orange;
+}
+
+.range .field .value .lower{
+    top: 50px;
+}
+.range .field input::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: rgb(249, 128, 148);
+    border-radius: 50%;
+    cursor: pointer;
+}
