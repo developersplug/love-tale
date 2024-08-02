@@ -19,8 +19,8 @@ const Matched = () => {
 
       <Asidecomponent />
 
-      <div className='flex-grow flex justify-center '>
-        <Matchedcomponent onMsgClick={handleMsgClick} className=' md:max-w-[28%] w-[100%] max-h-[90%] h-[100%] max-w-[30%] '/>
+      <div className='md:flex-grow flex-shrink flex justify-center'>
+        <Matchedcomponent onMsgClick={handleMsgClick} className=' flex-grow h-full w-full md:w-[28%] '/>
       </div>
 
     </div>

@@ -6,7 +6,7 @@ import './Filtercomponent.css'
 
 const FilterComponent = ({ onClick }) => {
     return (
-        <div className='overflow-auto max-w-[25%] w-[100%] h-screen rounded-lg  flex flex-col  bg-gray-50'>
+        <div className=' md:w-[28%] w-[34%]  h-screen rounded-lg  flex flex-col  bg-gray-50'>
             {/*Upper div */}
             <div className='bg-pink-300 w-[100%] h-[60px] flex items-center justify-between p-2' >
                 <div className='flex space-x-2 items-center'>

@@ -14,13 +14,13 @@ const MatchingStarted = () => {
     return <Filterapplied />; // Render the new component
   }
   return (
-    <div className='relative w-full min-h-screen h-full'>
+    <div className='relative w-full min-h-screen h-full '>
       <div className={`w-full h-full flex items-center md:justify-between justify-evenly `}>
 
         <Asidecomponent />
 
-        <div className='flex-grow flex justify-center '>
-          <Rightcard onFilterClick={handleFilterClick} className=' md:max-w-[28%] w-[100%] max-h-[90%] h-[100%] max-w-[30%] '/>
+        <div className=' md:flex-grow flex-shrink flex justify-center  '>
+          <Rightcard onFilterClick={handleFilterClick} className=' flex-grow h-full w-full md:w-[28%]'/>
         </div>
 
       </div>

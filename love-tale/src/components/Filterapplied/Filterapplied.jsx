@@ -9,6 +9,7 @@ const Filterapplied = () => {
     const handleClick = () => {
       setShowNewComponent(true);
     };
+    
   
     if (showNewComponent) {
       return <Matched />; // Render the new component
@@ -19,8 +20,8 @@ const Filterapplied = () => {
 
                 <Filtercomponent onClick={handleClick}  />
 
-                <div className='flex-grow flex justify-center '>
-                    <Rightcard className=' md:max-w-[28%] w-[100%] max-h-[90%] h-[100%] max-w-[30%] ' />
+                <div className='md:flex-grow flex-shrink flex justify-center '>
+                    <Rightcard className=' flex-grow h-full w-full md:w-[28%]' />
                 </div>
 
             </div>

@@ -9,7 +9,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Rightcard = ({ onFilterClick }) => {
     return (
-        <div className='overflow-auto max-w-[28%] w-[100%] h-screen rounded-lg  flex flex-col items-center  bg-gradient-to-t from-pink-500 to-gray-100'>
+        <div className='w-[60%] md:w-[28%] h-screen rounded-lg  flex flex-col items-center  bg-gradient-to-t from-pink-500 to-gray-100'>
             {/* Reload and filter icons */}
             <div className='flex items-center justify-between p-2 w-[100%]'>
                 <button><SlReload /></button>
