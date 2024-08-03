@@ -4,7 +4,7 @@ import { CiSettings } from "react-icons/ci";
 import boy from '../../assets/boy.jpeg';
 
 
-const Imagescollection = () => {
+const Imagescollection = ({onNextClick}) => {
     const images = {
         1: { src: img, content: '10h' },
         2: { src:boy , content: '10h' },
@@ -37,7 +37,7 @@ const Imagescollection = () => {
             </div>
             <p className='mx-[7%] font-normal my-[10px] text-center'>Upgrade to LoveTale plus for more top picks</p>
             {/*Images */}
-            <div className=" my-2 grid grid-cols-2 rounded-xl gap-y-10  gap-x-2 mx-[5%] w-[90%] ">
+            <div className=" my-2 h-[40%] grid grid-cols-2 rounded-xl gap-y-6  mx-[5%] w-[90%] ">
                 {Object.keys(images).map(key => (
                     <div key={key} className="w-[120px] h-[90px] flex flex-col rounded-md">
                         <div className="w-full h-full">
@@ -49,6 +49,7 @@ const Imagescollection = () => {
                     </div>
                 ))}
             </div>
+            <button onClick={onNextClick} className='my-6 p-2 bg-pink-400 rounded-lg'>Next</button>
         </div>
     )
 }

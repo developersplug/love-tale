@@ -4,7 +4,7 @@ import Herosection from './components/Herosection/Herosection'
 import Loginpopup from './components/Loginpopup/Loginpopup'
 import './App.css'
 import Details from './components/Details/Details'
-import Imageslider from './components/Imageslider/Imageslider'
+// import Imageslider  from './components/Imageslider/Imageslider'
 
 
 
@@ -42,7 +42,7 @@ const App = () => {
         <Loginpopup closePopup={handleClosePopup} onSignUpClick={handleSignUpClick} />
       )}
       {isDetailsVisible && <Details />}
-      <Imageslider />
+      {/* <Imageslider /> */}
 
     </>
   )
